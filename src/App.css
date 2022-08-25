@@ -1,0 +1,43 @@
+body {
+  background-color: #48dbfb;
+}
+
+#editor {
+  background-color: rgb(224, 224, 224);
+  height: 25vh;
+}
+
+#preview {
+  background-color: rgb(224, 224, 224);
+  min-height: 45vh;
+}
+
+#header {
+  height: 2.5rem;
+  background-color: #0aaace;
+  color: white;
+}
+
+.edicion {
+  width: 45rem;
+}
+
+.previsualizar {
+  width: 55rem;
+}
+
+.previsualizar img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.center {
+  vertical-align: baseline;
+}
