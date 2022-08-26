@@ -1,6 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import { marked } from "marked";
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
+
+marked.setOptions({
+  breaks: true,
+  highlight: (code) =>  Prism.highlight(code, Prism.languages.javascript, 'javascript')
+});
 
 export default function Previewer({ theText }) {
   return (

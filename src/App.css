@@ -41,3 +41,48 @@ button {
 .center {
   vertical-align: baseline;
 }
+
+/* Marked code Style*/
+blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+p code {
+  padding: 3px;
+}
+
+code {
+  background: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+pre {
+  display: block;
+  font-size: 1rem;
+  overflow: auto;
+  background: white;
+  padding: 30px;
+  line-height: 1.2;
+}
+
+h1 {
+  border-bottom: 2px solid gray;
+}
+
+h2 {
+  border-bottom: 1px solid gray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px solid gray;
+  padding-left: 5px;
+  padding-right: 5px;
+}
