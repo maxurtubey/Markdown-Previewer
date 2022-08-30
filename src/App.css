@@ -1,15 +1,40 @@
 body {
+  padding: 2rem;
   background-color: #48dbfb;
 }
 
-#editor {
-  background-color: rgb(224, 224, 224);
+.editorWrap {
+  margin: 0 auto;
+  margin: auto;
+  width: 45rem;
   height: 25vh;
+  margin-bottom: 2rem;
 }
 
-#preview {
+textarea {
+  width: 100%;
+  height: 18vh;
+}
+
+.maximizado textarea {
+  width: 100%;
+  height: 83vh;
+}
+.previewWrap {
+  margin: auto;
+  width: 55rem;
+}
+
+.maximizado {
+  height: 90vh;
+}
+
+.oculto {
+  display: none;
+}
+
+#editor, #preview {
   background-color: rgb(224, 224, 224);
-  min-height: 45vh;
 }
 
 #header {
@@ -18,17 +43,11 @@ body {
   color: white;
 }
 
-.edicion {
-  width: 45rem;
-}
-
-.previsualizar {
-  width: 55rem;
-}
-
 .previsualizar img {
-  max-width: 50%;
+  max-width: 40%;
   display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
 }

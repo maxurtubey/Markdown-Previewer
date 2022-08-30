@@ -9,12 +9,11 @@ marked.setOptions({
   highlight: (code) =>  Prism.highlight(code, Prism.languages.javascript, 'javascript')
 });
 
-export default function Previewer({ theText }) {
+export default function Previewer({ theText, changePreview, classes, index }) {
   return (
-    <div className="m-4">
-      <h5 className="text-center">Converted text:</h5>
+    <div className={classes[1]}>
       <div className='container shadow rounded previsualizar'>
-        <Header Title={'Previewer'} />
+        <Header Title={'Previewer - Converted text:'} changeView={changePreview} theIndex={index} />
         <div className="row">
           <div id="preview" dangerouslySetInnerHTML={{ __html: marked(theText) }}></div>
         </div>

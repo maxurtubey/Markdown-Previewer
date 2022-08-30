@@ -1,14 +1,16 @@
 import React from "react"
 import Header from "./Header"
 
-export default function Editor({ textToAppend, theText }) {
+export default function Editor({ textToAppend, theText, changeEditor, classes, index }) {
+
+  let onHandleChange = (e) => textToAppend(e.target.value)
+
   return (
-    <div className="m-4">
-      <h5 className="text-center">Input desired text below:</h5>
+    <div className={classes[0]}>
       <div className="container shadow mb-2 rounded edicion">
-        <Header Title={"Editor"} />
+        <Header Title={"Editor - Input desired text below:"} changeView={changeEditor} theIndex={index} />
         <div className="row">
-          <textarea id="editor" type="text" onChange={(e) => textToAppend(e.target.value)} value={theText} />
+          <textarea id="editor" type="text" onChange={onHandleChange} value={theText} />
         </div>
       </div>
     </div>
